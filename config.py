@@ -1,0 +1,6 @@
+BOT_TOKEN = "8229992554:AAHP3_UWURvwWflqBzaNaEjAfujpPbQvm74"
+
+IG_USERNAME = "itssulaimonov"
+IG_PASSWORD = "992929089949"
+
+SESSION_FILE = "session.json"

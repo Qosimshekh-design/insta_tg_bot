@@ -1,0 +1,18 @@
+[2026-01-01 18:54:48] Khujand.memtj | ERROR | 2 validation errors for Media
+clips_metadata.original_sound_info.ig_artist.profile_pic_id
+  Field required [type=missing, input_value={'pk': 72543034174, 'pk_i...ng_id__': '72543034174'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+clips_metadata.original_sound_info.audio_filter_infos
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.11/v/list_type
+[2026-01-01 18:55:12] Khujand.memtj | ERROR | 2 validation errors for Media
+clips_metadata.original_sound_info.ig_artist.profile_pic_id
+  Field required [type=missing, input_value={'pk': 72543034174, 'pk_i...ng_id__': '72543034174'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+clips_metadata.original_sound_info.audio_filter_infos
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.11/v/list_type
+[2026-01-01 19:02:30] itssulaimonov | ERROR | 1 validation error for Media
+clips_metadata.original_sound_info.audio_filter_infos
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.11/v/list_type
