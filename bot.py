@@ -17,9 +17,16 @@ from universal_watermark import add_text_watermark
 
 # ================= INIT =================
 
-bot = Bot(BOT_TOKEN)
-dp = Dispatcher()
-os.makedirs("videos", exist_ok=True)
+from aiogram.client.default import DefaultBotProperties
+from aiohttp import ClientTimeout
+
+bot = Bot(
+    BOT_TOKEN,
+    default=DefaultBotProperties(
+        timeout=ClientTimeout(total=300)  # 5 минут
+    )
+)
+
 
 # ================= STATES =================
 
@@ -77,10 +84,7 @@ async def publish(msg: types.Message, state: FSMContext):
 async def get_video(msg: types.Message, state: FSMContext):
     file = await bot.get_file(msg.video.file_id)
     path = f"videos/{msg.video.file_id}.mp4"
-    await bot.download(
-    msg.video,
-    destination=path
-)
+await bot.download_file(file.file_path, path)
 
     await msg.answer("🔥 Уникализация + watermark...")
     #path = await asyncio.to_thread(uniquify_video_hard, path)
