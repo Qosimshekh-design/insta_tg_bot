@@ -83,7 +83,7 @@ async def get_video(msg: types.Message, state: FSMContext):
 )
 
     await msg.answer("🔥 Уникализация + watermark...")
-    path = await asyncio.to_thread(uniquify_video_hard, path)
+    #path = await asyncio.to_thread(uniquify_video_hard, path)
     path = await asyncio.to_thread(
         add_text_watermark,
         path,
