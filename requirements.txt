@@ -1,8 +1,5 @@
-aiogram==3.4.1
-instagrapi==2.1.3
-python-dotenv
-aiogram==3.*
-instagrapi
-python-dotenv
-moviepy
+aiogram==3.23.0
+instagrapi==2.2.1
+moviepy==1.0.3
+pillow
 requests
